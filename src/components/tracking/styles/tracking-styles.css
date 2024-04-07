@@ -1,0 +1,44 @@
+.track-menu-option {
+  width: 40% !important;
+}
+.btn-track {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-radius: 15px;
+  top: 90%;
+  left: 5%;
+  cursor: pointer;
+  background-color: var(--light-blue);
+  border: none;
+  color: var(--light-gray);
+  font-weight: 700;
+}
+.mid-fixed {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  box-shadow: 0 0 10px var(--background-blue);
+}
+.close-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
+.btn-track:hover {
+  background-color: var(--light-gray);
+  color: var(--light-blue);
+}
+.group-pop-up {
+  width: 85%;
+}
+.group-pop-up div {
+  margin: 1em 0;
+}
+.status-txt {
+  display: list-item;
+  margin-left: 2em;
+  color: var(--background-blue);
+  list-style: inside;
+}

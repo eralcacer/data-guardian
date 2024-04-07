@@ -1,0 +1,156 @@
+.main-content-posts {
+  height: -webkit-fill-available;
+  margin-top: 20vh;
+}
+.menu-posts {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.menu-posts button {
+  background-color: transparent;
+  border: none;
+  margin: 0 12px;
+  cursor: pointer;
+}
+.active {
+  display: block;
+  margin: auto;
+  width: 100%;
+  border-bottom: 3px solid var(--light-gray) !important;
+  animation: expandWidth 0.2s linear;
+  transition: all;
+}
+@keyframes expandWidth {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.content-box {
+  padding: 1em 4em;
+}
+.post-comp {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.post-comp div {
+  margin: 12px 0;
+}
+.post-title-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  user-select: none;
+}
+.post-title-top .title {
+  width: 70%;
+}
+.post-title-top .small-txt {
+  width: fit-content;
+}
+.group-content {
+  display: block;
+  width: 70%;
+  pointer-events: none;
+  user-select: none;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+.group-btn {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.group-btn button {
+  margin: 6px 0;
+}
+.group-txt {
+  width: 70%;
+}
+.pop-up-subs {
+  position: fixed;
+  z-index: 100;
+  top: 25%;
+  left: 25%;
+  height: auto;
+}
+.unlock-txt {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.unlock-txt h4 {
+  width: 50%;
+}
+.create-content-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 85%;
+  right: 10%;
+  width: 48px;
+  height: 48px;
+  margin: 0 0;
+  background-color: var(--card-background-color);
+  border-radius: 70%;
+  color: var(--background-blue);
+  font-size: 34px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.create-content-btn:hover {
+  scale: 1.2;
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+}
+
+.content-creation-comp {
+  position: fixed;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  opacity: 0.8;
+  background-color: var(--card-background-color);
+  z-index: 444;
+}
+.content-form {
+  position: absolute;
+  z-index: 500;
+  top: 25%;
+  left: 25%;
+  color: var(--background-blue);
+  opacity: 1;
+  background-color: var(--white-font-color);
+}
+.input-comp {
+  width: -webkit-fill-available;
+  border: 1px solid var(--background-blue);
+}
+.input-content {
+  width: -webkit-fil-available;
+  height: auto;
+  min-height: 100px;
+  resize: vertical;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.post-form div {
+  margin: 12px;
+}
+.close-post {
+  width: fit-content;
+  height: fit-content;
+}
+.pdf-content {
+  /* pointer-events: none; */
+  /* user-select: none; */
+  /* overflow-y: scroll; */
+}

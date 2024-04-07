@@ -1,0 +1,14 @@
+.box-comp div {
+  margin: 12px 0;
+}
+.txt-underline:hover {
+  color: var(--light-blue);
+}
+.btn-comp-a {
+  display: flex;
+  width: 100%;
+}
+.btn-comp-a a {
+  text-decoration: none;
+  text-align: center;
+}

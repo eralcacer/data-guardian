@@ -1,0 +1,27 @@
+.grid-comp {
+  display: block;
+  width: fit-content;
+  margin: 2em auto;
+}
+table {
+  border-collapse: collapse;
+  /* border: 1px solid var(--light-blue); */
+}
+th,
+td {
+  text-align: left;
+  border: 1px solid var(--light-blue);
+  padding: 8px;
+  max-width: 100px;
+  word-wrap: break-word;
+}
+tr:nth-child(even) {
+  background-color: var(--light-gray);
+  color: var(--black-color);
+}
+.viewer-token {
+  max-width: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

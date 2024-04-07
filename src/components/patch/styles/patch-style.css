@@ -1,0 +1,39 @@
+.small-txt {
+  margin-left: 6px;
+}
+.title {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--background-blue);
+  width: 100%;
+}
+.white-box-round div {
+  margin: 12px auto;
+}
+.content-editor {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  z-index: 500;
+  border: 1px solid var(--background-blue);
+}
+.edit-comp {
+  position: fixed;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  top: 0;
+  left: -100%;
+  z-index: 444;
+  opacity: 0.8;
+  background-color: var(--card-background-color);
+}
+.close-btn {
+  width: fit-content;
+  height: fit-content;
+}
+
+.save-btn {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+}

@@ -1,38 +1,219 @@
-.App {
-  text-align: center;
-}
+@import url("./styles/global-variables.css");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--background-blue);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mid-center {
+  display: block;
+  margin: auto auto;
+}
+.component {
+  width: 100%;
+  height: max(100vh, 100%);
+  background-color: var(--background-blue);
+  color: var(--white-font-color);
+  padding: 2em 0;
+}
+.white-box-round {
+  background-color: var(--card-background-color);
+  padding: 1em;
+  width: 50%;
+  height: auto;
+  color: var(--black-color);
+  border: transparent;
+  border-radius: 15px;
+  font-weight: 700;
+  margin: 1.5rem auto;
+}
+.appear {
+  animation: appear 0.2s linear both;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    scale: 0.8;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-comp {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.box-comp {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.input-comp {
+  padding: 1em;
+  width: auto;
+  height: auto;
+  border-color: transparent;
+  border-radius: 15px;
+  margin: 12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input-comp:focus {
+  outline: none !important;
+  border: 1px solid var(--light-blue);
+  box-shadow: 0 0 10px var(--light-gray);
+}
+.btn-comp {
+  background-color: var(--background-blue);
+  font-weight: 700;
+  color: var(--white-font-color);
+  border-color: transparent;
+  border-radius: 15px;
+  padding: 1em;
+  cursor: pointer;
+}
+.btn-comp:hover {
+  background-color: var(--hover-blue-color);
+  color: var(--light-gray);
+}
+.btn-comp-green {
+  background-color: var(--success-background);
+  font-weight: 700;
+  color: var(--background-blue);
+  border-color: transparent;
+  border-radius: 15px;
+  padding: 1em;
+  cursor: pointer;
+}
+.btn-comp-green:hover {
+  background-color: var(--success-dark);
+  color: var(--white-font-color);
+}
+.btn-comp-white {
+  background-color: var(--card-background-color);
+  font-weight: 700;
+  color: var(--background-blue);
+  border-color: transparent;
+  border-radius: 15px;
+  padding: 1em;
+  cursor: pointer;
+}
+.btn-comp-white:hover {
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+}
+.btn-comp-outline {
+  background-color: transparent;
+  font-weight: 700;
+  border: 2px solid var(--background-blue);
+  color: var(--background-blue);
+  border-radius: 15px;
+  padding: 1em;
+  cursor: pointer;
+}
+.btn-comp-outline:hover {
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+  border-color: var(--light-blue);
+}
+.btn-comp-secondary {
+  background-color: var(--light-blue);
+  font-weight: 700;
+  color: var(--card-background-color);
+  border-color: transparent;
+  border-radius: 15px;
+  padding: 1em;
+  cursor: pointer;
+}
+.btn-white {
+  background-color: var(--card-background-color);
+  font-weight: 700;
+  color: var(--background-blue);
+  border-color: transparent;
+  border-radius: 15px;
+  padding: 1em;
+  cursor: pointer;
+}
+.btn-white:hover {
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+}
+.red-btn-outline {
+  border-color: var(--error-dark);
+  font-weight: 700;
+  color: var(--error-dark);
+  border-radius: 15px;
+  padding: 1em;
+  cursor: pointer;
+}
+.red-btn-outline:hover {
+  background-color: var(--error-dark);
+  color: var(--white-font-color);
+}
+.full-width {
+  width: 100%;
+}
+.small-txt {
+  font-weight: 400;
+  font-size: small;
+  color: var(--background-blue);
+}
+.txt-underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.txt-uppercase {
+  text-transform: uppercase;
+}
+.txt-capitalize {
+  text-transform: capitalize;
+}
+.txt-uppercase-first-letter::first-letter {
+  text-transform: uppercase;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-desc {
+  font-weight: 500;
+  color: var(--black-color);
+  font-size: 0.8em;
+}
+.txt-red {
+  color: var(--error-dark);
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.mid-absolute {
+  position: absolute;
+  top: 50%;
+  transform: translateX(50%);
+}
+.flex-start {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-end {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.opacity {
+  animation: fadeIn 0.2s linear both;
+}
+.main-content-posts {
+  height: -webkit-fill-available;
+  margin-top: 20vh;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 0.8;
   }
 }

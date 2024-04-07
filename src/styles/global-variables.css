@@ -1,0 +1,22 @@
+:root {
+  --background-blue: #134074;
+  --hover-blue-color: #0b2545;
+  --light-blue: #8da9c4;
+  --white-font-color: #fff;
+  --grey-font-color: #adb5bd;
+  --black-color: #000;
+  --card-background-color: #eef4ed;
+  --light-gray: #f5f5f5;
+  --error-background: #e48989;
+  --error-dark: #e03333;
+  --error-cross: #a96565;
+  --success-dark: #19581b;
+  --success-background: #7aed7e;
+  --success-cross: #87ab89;
+  --warn-background: #f6f48d;
+  --warn-dark: #c1b257;
+  --warn-cross: #d7d6ae;
+  --info-background: #5ea1d7;
+  --info-dark: #164469;
+  --info-cross: #add9fe;
+}

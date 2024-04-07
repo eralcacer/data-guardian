@@ -1,0 +1,105 @@
+.drop-menu {
+  width: fit-content;
+  display: block;
+  margin: auto;
+}
+.main-menu-item {
+  width: fit-content;
+  position: relative;
+  background-color: var(--card-background-color);
+  color: var(--background-blue);
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline-block;
+  margin: auto;
+}
+.main-menu-item:hover {
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+}
+.menu-elements {
+  position: absolute;
+  background-color: var(--card-background-color);
+  list-style: none;
+  width: 15%;
+  padding: 0;
+  border-radius: 15px;
+}
+.drop-down {
+  animation: moveDown 0.2s forwards;
+}
+.drop-up {
+  animation: moveUp 0.2s forwards;
+}
+.element-menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: max-content;
+  padding: 1em;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border-bottom: 1px solid var(--light-blue);
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  background-color: var(--card-background-color);
+  color: var(--background-blue);
+}
+.selected {
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+}
+.element-flex {
+  display: flex;
+}
+.element-menu:hover {
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+}
+/* .menu-elements div {
+  display: block;
+  color: var(--background-blue);
+  cursor: pointer;
+  list-style: none;
+  margin: auto;
+  padding: 1em;
+  text-transform: uppercase;
+  width: -webkit-fill-available;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-align: center;
+}
+.menu-elements div:hover {
+  background-color: var(--light-blue);
+  color: var(--light-gray);
+} */
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes moveUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60px);
+    display: none;
+  }
+}

@@ -1,0 +1,79 @@
+.message-box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  height: 100px;
+  padding: 1em;
+  border-radius: 15px;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: appear 0.2s linear both;
+}
+.msg-absolute-position {
+  position: fixed;
+  top: 25%;
+  right: 2%;
+  width: 20% !important;
+  height: auto;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.error-comp {
+  background-color: var(--error-background);
+  color: var(--error-dark);
+}
+.error-txt {
+  width: 50%;
+}
+.error-icon {
+  width: 10%;
+}
+.cross-error-icon {
+  color: var(--error-cross);
+  width: 10%;
+  cursor: pointer;
+}
+.success-comp {
+  background-color: var(--success-background);
+  color: var(--success-dark);
+}
+.success-txt {
+  width: 50%;
+}
+.cross-success-icon {
+  color: var(--success-cross);
+  width: 10%;
+  cursor: pointer;
+}
+.warn-comp {
+  background-color: var(--warn-background);
+  color: var(--warn-dark);
+}
+.warn-txt {
+  width: 50%;
+}
+.cross-warn-icon {
+  color: var(--warn-cross);
+  width: 10%;
+  cursor: pointer;
+}
+.info-comp {
+  background-color: var(--info-background);
+  color: var(--info-dark);
+}
+.cross-info-icon {
+  color: var(--info-cross);
+  width: 10%;
+  cursor: pointer;
+}
+.info-txt {
+  width: 50%;
+}
