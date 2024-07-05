@@ -10,6 +10,8 @@ Besides, I documantated my journey through this project on a research paper that
 
 # What did I learn?
 
--I learned a new way to scale transaction posting into Ethereum's blockchain network by applying off-chain techniques that allows to scale my application regardless of the number of accesses to user's data.
--I learned to code smart contracts in Solidity.
--I learned to deploy smart contacts to Ethereum's Sepolia Network using RedHat.
+💡I learned a new way to scale transaction posting into Ethereum's blockchain network by applying off-chain techniques that allows to scale my application regardless of the number of accesses to user's data.
+
+💡I learned to code smart contracts in Solidity.
+
+💡I learned to deploy smart contacts to Ethereum's Sepolia Network using RedHat.
